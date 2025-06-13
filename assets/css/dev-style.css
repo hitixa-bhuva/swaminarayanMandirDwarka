@@ -130,6 +130,8 @@ body {
 
 /* Hero Section */
 .hero-section {
+  background-image: url(/assets/images/home/element01/Image.png);
+  background-size: cover;
   min-height : 70vh;
   display    : flex;
   align-items: center;
@@ -157,6 +159,12 @@ body {
   color      : #ff6b35;
   font-style : italic;
   font-weight: 400;
+   font-family: "Caramel", cursive;
+   font-size: 100px;
+font-weight: 400;
+line-height: 100%;
+letter-spacing: 0%;
+
 }
 
 .hero-description {
