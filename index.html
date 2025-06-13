@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation - Dharamshala</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- google font family -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- custome style -->
+     <link rel="stylesheet" href="./assets/css/dev-style.css">
+
+</head>
+<body>
+    <!--element01 top nav  -->
+     <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.098.119.112.222.083.343-.09.377-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378 0 0-.599 2.282-.744 2.84-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24.001 12.017 24.001c6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="tel:+911334636345" class="phone-number">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        +91 13345 63645
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+ <nav class="navbar navbar-expand-lg main-nav">
+        <div class="container">
+            <!-- Left Navigation -->
+            <div class="d-none d-lg-flex left-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How to Reach</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Centered Logo -->
+            <a class="navbar-brand" href="#">Swaminarayan Mandir Dwarka</a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Right Navigation -->
+            <div class="d-none d-lg-flex right-nav">
+                <div class="d-flex gap-2">
+                    <a href="#" class="nav-contect-btn">Contact Us</a>
+                    <a href="#" class="btn btn-primary">View Availability</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <!-- <div class="collapse navbar-collapse d-lg-none" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How to Reach</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex gap-2 flex-column flex-sm-row">
+                    <a href="#" class="btn btn-outline-primary">Contact Us</a>
+                    <a href="#" class="btn btn-primary">View Availability</a>
+                </div>
+            </div> -->
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Comfortable & <span class="highlight">Devotional</span><br>
+                            Stays at Swaminarayan<br>
+                            Mandir
+                        </h1>
+                        <p class="hero-description">
+                            Located just 600 meters from the sacred Shri Beyt Dwarkadhish Temple, experience peace, comfort, and devotion with our well-maintained accommodation facilities.
+                        </p>
+                        <a href="#" class="hero-btn">
+                            Book Your Stay
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <!-- <div class="location-tag">Beyt Dwarka</div> -->
+                        <img src="./assets/images/home/element01/Image.jpg" alt="Swaminarayan Mandir Building" class="building-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--element02 Accommodation Section element02 -->
+    <section id="element02" class="marigintop40">
+        <div class="accommodation-section">
+            <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+               <div class="row">
+                <div class="col-md-6">
+                     <div class="section-subtitle-wrapper">
+                      <div class="line"></div>
+                      <div class="section-subtitle">Accommodation</div>
+                    </div>
+                    <h2 class="section-title">Comfortable Rooms for a Peaceful Spiritual Stay</h2>
+                </div>
+                <div class="col-md-6">
+                    <p class="description-text">
+                        Bet Dwarka, also known as Shankhodhar, is said to have been the residence of Lord Krishna 
+                        during his ruling years at Dwarka. It derived its name from the word 'bet' which translates to gift 
+                        and is believed that Lord Krishna received it from his friend Sudama. In the ancient epic, 
+                        Mahabharata, Bet Dwarka is known as Antardvipa to which people of the Yadava clan needed to 
+                        travel by boat.
+                    </p>
+                </div>
+                    
+               </div>
+            </div>
+
+            <!-- Room Gallery -->
+            <div class="room-gallery">
+                <div class="row g-4">
+                    <!-- Room 1 -->
+                    <div class="col-lg-6 col-md-6 roommt-0">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=400&fit=crop" alt="Dormitory Room">
+                        </div>
+                    </div>
+
+                    <!-- Room 2 -->
+                    <div class="col-lg-6 col-md-6 roommt-0">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop" alt="Private Room">
+                        </div>
+                    </div>
+
+                    <!-- Room 3 - Full Width -->
+                    <div class="col-12">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&h=400&fit=crop" alt="Large Dormitory">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- element03 Check-in and Check-out Details -->
+    <section id="element03" class="marigintop40">
+        <div class="booking-section">
+            <div class="container-fluid">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="section-subtitle">Check-in and Check-out Details</div>
+                <h2 class="section-title">STAY OPTIONS AT SWAMINARAYAN MANDIR, BEYT DWARKA</h2>
+            </div>
+
+            <!-- Booking Information -->
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="booking-info">
+                        <div class="info-columns">
+                            <!-- Check-in Check-out -->
+                            <div class="info-column">
+                                <h4 class="info-title">CHECK IN - CHECK OUT</h4>
+                                <div class="info-item">
+                                    <img src="./assets/images/home/element03/icon/clock.png" alt="clock">
+                                    <span class="ms-2">Check-in from <strong>10:00 PM</strong></span>
+                                </div>
+                                <div class="info-item">
+                                    <img src="./assets/images/home/element03/icon/clock.png" alt="clock">
+                                    <span class="ms-2">Check-out from <strong>09:00 AM</strong></span>
+                                </div>
+                            </div>
+
+                            <!-- Rooms -->
+                            <div class="info-column">
+                                <h4 class="info-title">ROOMS</h4>
+                                <div class="info-item">
+                                    <img src="./assets/images/home/element03/icon/bad3.png" alt="bad 3 person">
+                                    <span class="ms-2">3 Bed AC Room (Only For Family)</span>
+                                </div>
+                            </div>
+
+                            <!-- Inclusion -->
+                            <div class="info-column">
+                                <h4 class="info-title">INCLUSION</h4>
+                                <div class="info-item">
+                                    <img src="./assets/images/home/element03/icon/bed-outline.png" alt="single bed">
+                                    <span class="ms-2">3 Single Beds</span>
+                                </div>
+                                <div class="info-item">
+                                    <img src="./assets/images/home/element03/icon/shower.png" alt="shower">
+                                    <span class="ms-2">Western Attached Let-Bath</span>
+                                </div>
+                            </div>
+
+                            <!-- Contribution -->
+                            <div class="info-column">
+                                <h4 class="info-title">CONTRIBUTION</h4>
+                                <div class="info-item">
+                                    <img src="./assets/images/home/element03/icon/bad2.png" alt="bed 2 person">
+                                    <span class="ms-2">Starting at Rs.1,680.00*</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Now Button -->
+            <div class="book-now-section">
+                <button class="book-now-btn">BOOK NOW</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- element04 Facilities and all -->
+    <section id="element04" class="marigintop40">
+        <div class="facility-section">
+            <div class="container">
+              <!-- Section Header -->
+              <div class="row d-flex justify-content-center">
+                  <div class="col-md-9">
+                      <div class="section-header">
+                          <div class="section-subtitle">Facilities</div>
+                          <h2 class="section-title">Lorem ipsum dolor sit consectetur</h2>
+                          <p class="Facilities-content-text">
+                              Our artists blend creativity with modern technology. Every tile is carefully made by skilled hands, with a touch of art and attention to detail.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="row justify-content-center text-center gy-4">
+                   <!-- Hot Water -->
+                   <div class="col-6 col-md-2">
+                     <img src="./assets/images/home/element04/hotWater.svg" alt="Hot Water" class="facility-icon">
+                     <h6 class="mb-0">Hot Water</h6>
+                   </div>
+
+                   <!-- Parking -->
+                   <div class="col-6 col-md-2">
+                     <img src="./assets/images/home/element04/parked-car.svg" alt="Parking" class="facility-icon">
+                     <h6 class="mb-0">Parking</h6>
+                   </div>
+
+                   <!-- CCTV -->
+                   <div class="col-6 col-md-2">
+                     <img src="./assets/images/home/element04/cctv.svg" alt="CCTV" class="facility-icon">
+                     <h6 class="mb-0">CCTV</h6>
+                   </div>
+
+                   <!-- Garden -->
+                   <div class="col-6 col-md-2">
+                     <img src="./assets/images/home/element04/gardening.svg" alt="Garden" class="facility-icon">
+                     <h6 class="mb-0">Garden</h6>
+                   </div>
+
+                   <!-- Drinking Water -->
+                   <div class="col-6 col-md-2">
+                     <img src="./assets/images/home/element04/water.svg" alt="Drinking Water" class="facility-icon">
+                     <h6 class="mb-0">Drinking Water</h6>
+                   </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- element05 Location & Directions -->
+     <section id="element05" class="marigintop40">
+        <div class="locationsection py-4 locationsectionimg">
+            <div class="container-fluid ">
+                <div class="row g-4">
+                <!-- Map Section -->
+                <div class="col-lg-6 ">
+                    <div class="map-container p-3">
+                        <img src="./assets/images/home/element05/map.png" alt="">
+                    </div>
+                </div>
+                
+                <!-- Info Section -->
+                <div class="col-lg-6">
+                    <div class="section-subtitle-wrapper mt-3">
+                      <div class="line"></div>
+                      <div class="section-subtitle">Location & Directions</div>
+                    </div>
+                    <h2 class="section-title">How to Reach Bet Dwarka</h2>
+                    <div class="info-section h-100">          
+                        <div class="accordion" id="transportAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingGetHere">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGetHere" aria-expanded="true" aria-controls="collapseGetHere">
+                                        <h6 class="transport-title m-0">
+                                            Getting Here
+                                        </h6>
+                                        <span class="accordion-icon">
+                                            <svg class="plus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="currentColor"/>
+                                            </svg>
+                                            <svg class="minus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 13H5V11H19V13Z" fill="currentColor"/>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h2>
+                                <div id="collapseGetHere" class="accordion-collapse collapse show" aria-labelledby="headingGetHere" data-bs-parent="#transportAccordion">
+                                    <div class="accordion-body">
+                                        <p class="location-info">
+                                            Swaminarayan Mandir, Hanuman Dandi Road, Near Beyt Dwarka Main Mandir, Beyt Dwarka, Dist. Dwarka, Gujarat 361345
+                                        </p>
+                                        <a href="#" class="directions-link">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            OPEN GOOGLE MAPS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+ 
+                             <div class="accordion-item">
+                                 <h2 class="accordion-header" id="headingRoad">
+                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRoad" aria-expanded="false" aria-controls="collapseRoad">
+                                        <h6 class="transport-title m-0">
+                                            BY ROAD
+                                        </h6>
+                                        <span class="accordion-icon">
+                                            <svg class="plus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="currentColor"/>
+                                            </svg>
+                                            <svg class="minus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 13H5V11H19V13Z" fill="currentColor"/>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h2>
+                                <div id="collapseRoad" class="accordion-collapse collapse" aria-labelledby="headingRoad" data-bs-parent="#transportAccordion">
+                                    <div class="accordion-body">
+                                        <p class="mb-2"><strong>From Dwarka:</strong> 30 km via Okha Road</p>
+                                        <p class="mb-2"><strong>From Jamnagar:</strong> 137 km via NH947A</p>
+                                        <p class="mb-2"><strong>From Rajkot:</strong> 217 km via NH27 and NH947A</p>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="fas fa-info-circle me-1"></i>
+                                            Take a ferry from Okha to reach Bet Dwarka island
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>              
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTrain">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrain" aria-expanded="false" aria-controls="collapseTrain">
+                                        <h6 class="transport-title m-0">
+                                            BY TRAIN
+                                        </h6>
+                                        <span class="accordion-icon">
+                                            <svg class="plus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="currentColor"/>
+                                            </svg>
+                                            <svg class="minus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 13H5V11H19V13Z" fill="currentColor"/>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h2>
+                                <div id="collapseTrain" class="accordion-collapse collapse" aria-labelledby="headingTrain" data-bs-parent="#transportAccordion">
+                                    <div class="accordion-body">
+                                        <p class="mb-2"><strong>Nearest Station:</strong> Okha Railway Station (5 km)</p>
+                                        <p class="mb-2"><strong>Major Connection:</strong> Dwarka Railway Station (35 km)</p>
+                                        <p class="mb-2"><strong>Express Trains:</strong> Okha Express, Saurashtra Express</p>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="fas fa-info-circle me-1"></i>
+                                            Take local transport from station to Okha port, then ferry to island
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>              
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingAir">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAir" aria-expanded="false" aria-controls="collapseAir">
+                                        <h6 class="transport-title m-0">
+                                            BY AIR
+                                        </h6>
+                                        <span class="accordion-icon">
+                                            <svg class="plus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="currentColor"/>
+                                            </svg>
+                                            <svg class="minus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 13H5V11H19V13Z" fill="currentColor"/>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h2>
+                                <div id="collapseAir" class="accordion-collapse collapse" aria-labelledby="headingAir" data-bs-parent="#transportAccordion">
+                                    <div class="accordion-body">
+                                        <p class="mb-2"><strong>Nearest Airport:</strong> Jamnagar Airport (137 km)</p>
+                                        <p class="mb-2"><strong>Major Airport:</strong> Rajkot Airport (217 km)</p>
+                                        <p class="mb-2"><strong>International:</strong> Ahmedabad Airport (450 km)</p>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="fas fa-info-circle me-1"></i>
+                                            Hire taxi or take bus from airport to Okha, then ferry to island
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- element06 Things to Do Nearby -->
+    <section id="element06" class="marigintop40">
+        <div class="attractions-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="section-subtitle">Things to Do Nearby</div>
+                <h2 class="section-title">Attraction Near By</h2>
+                <p class="Facilities-content-text">
+                    Explore the spiritual and scenic surroundings during your stay
+                </p>
+            </div>
+            
+            <!-- Attractions Slider -->
+            <div class="attractions-slider" id="attractionsSlider">
+                <div class="slider-container" id="sliderContainer">
+                    <!-- Dwarka Temple -->
+                    <div class="attraction-card" data-attraction="dwarka-temple">
+                        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Dwarka Temple" class="card-image">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Dwarka Temple</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Dwarka Beach -->
+                    <div class="attraction-card" data-attraction="dwarka-beach">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Dwarka Beach" class="card-image">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Dwarka Beach</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Sudarshan Setu -->
+                    <div class="attraction-card" data-attraction="sudarshan-setu">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sudarshan Setu" class="card-image">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Sudarshan Setu</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Rukmani Devi Temple -->
+                    <div class="attraction-card" data-attraction="rukmani-temple">
+                        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Rukmani Devi Temple" class="card-image">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Rukmani Devi Temple</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Nageshwar Temple -->
+                    <div class="attraction-card" data-attraction="nageshwar-temple">
+                        <img src="https://images.unsplash.com/photo-1609920658906-8223bd289001?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Nageshwar Temple" class="card-image">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Nageshwar Temple</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Gopi Talav -->
+                    <div class="attraction-card" data-attraction="gopi-talav">
+                        <img src="https://images.unsplash.com/photo-1580158392353-7c7c5b1d8d3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gopi Talav" class="card-image">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Gopi Talav</h3>
+                        </div>
+                    </div>
+                    <!-- Rukmani Devi Temple -->
+                    <div class="attraction-card" data-attraction="rukmani-temple">
+                        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Rukmani Devi Temple" class="card-image">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Rukmani Devi Temple</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Nageshwar Temple -->
+                    <div class="attraction-card" data-attraction="nageshwar-temple">
+                        <img src="https://images.unsplash.com/photo-1609920658906-8223bd289001?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Nageshwar Temple" class="card-image">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Nageshwar Temple</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Gopi Talav -->
+                    <div class="attraction-card" data-attraction="gopi-talav">
+                        <img src="https://images.unsplash.com/photo-1580158392353-7c7c5b1d8d3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gopi Talav" class="card-image">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Gopi Talav</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+                <button class="control-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="control-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+          
+        </div>
+        </div>
+    </section>
+
+    <!-- element07 FAQ -->
+    <section id="element07">
+        <div class="faq-section">
+             <!-- Decorative SVG Elements -->
+              <img src="./assets/images/home/element07/Group.png" class="decorative-svg svg-left" alt="">
+              <img src="./assets/images/home/element07/Group (1).png" class="decorative-svg svg-right" alt="">
+             <div class="container faq-container">
+                 <div class="row justify-content-center">
+                     <div class="col-lg-9">
+                         <div class="section-title">
+                             <div class="section-label">FAQs</div>
+                             <h2 class="main-title">Lorem Ipsum Dolor Sit Consectetur</h2>
+                         </div>
+
+                         <div class="accordion" id="faqAccordion">
+                             <!-- First Accordion Item -->
+                             <div class="accordion-item">
+                                 <h2 class="accordion-header">
+                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                         Is there a garden facility available at Swaminarayan Mandir?
+                                        <span class="chevron ms-auto">
+                                            <svg class="chevron-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#FF6500"/>
+                                            </svg>
+                                        </span>
+                                     </button>
+                                 </h2>
+                                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                     <div class="accordion-body">
+                                         Yes, a garden facility is available where guests can relax & enjoy the surrounding environment.
+                                     </div>
+                                 </div>
+                             </div>
+
+                             <!-- Second Accordion Item -->
+                             <div class="accordion-item">
+                                 <h2 class="accordion-header">
+                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                         Are there any specific rules for check-in?
+                                         <span class="chevron ms-auto">
+                                            <svg class="chevron-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#FF6500"/>
+                                            </svg>
+                                        </span>
+                                     </button>
+                                 </h2>
+                                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                     <div class="accordion-body">
+                                         Check-in time is from 2:00 PM onwards. Guests are required to carry valid ID proof and follow the temple guidelines during their stay. Early check-in may be available upon request and subject to availability.
+                                     </div>
+                                 </div>
+                             </div>
+
+                             <!-- Third Accordion Item -->
+                             <div class="accordion-item">
+                                 <h2 class="accordion-header">
+                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                         Do you have a dormitory or shared accommodation for groups at Swaminarayan Mandir?
+                                         <span class="chevron ms-auto">
+                                            <svg class="chevron-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#FF6500"/>
+                                            </svg>
+                                        </span>
+                                     </button>
+                                 </h2>
+                                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                     <div class="accordion-body">
+                                         Yes, we offer dormitory-style accommodation and shared rooms that are perfect for groups, families, and pilgrims. These facilities provide comfortable bedding and basic amenities at affordable rates.
+                                     </div>
+                                 </div>
+                             </div>
+
+                             <!-- Fourth Accordion Item -->
+                             <div class="accordion-item">
+                                 <h2 class="accordion-header">
+                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                         Is Swaminarayan Mandir suitable for families?
+                                         <span class="chevron ms-auto">
+                                            <svg class="chevron-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#FF6500"/>
+                                            </svg>
+                                        </span>
+                                     </button>
+                                 </h2>
+                                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                     <div class="accordion-body">
+                                         Absolutely! Swaminarayan Mandir is very family-friendly with dedicated family rooms, children's play areas, and spiritual programs suitable for all ages. The peaceful environment makes it an ideal place for family visits and spiritual retreats.
+                                     </div>
+                                 </div>
+                             </div>
+
+                             <!-- Fifth Accordion Item -->
+                             <div class="accordion-item">
+                                 <h2 class="accordion-header">
+                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                         Where is Swaminarayan Mandir located?
+                                         <span class="chevron ms-auto">
+                                            <svg class="chevron-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#FF6500"/>
+                                            </svg>
+                                        </span>
+                                     </button>
+                                 </h2>
+                                 <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                     <div class="accordion-body">
+                                         Swaminarayan Mandir is located in the heart of the spiritual district, easily accessible by public transportation and private vehicles. The exact address and directions can be provided upon booking confirmation.
+                                     </div>
+                                 </div>
+                             </div>
+
+                             <!-- Sixth Accordion Item -->
+                             <div class="accordion-item">
+                                 <h2 class="accordion-header">
+                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                         How can I book a room at Swaminarayan Mandir?
+                                         <span class="chevron ms-auto">
+                                            <svg class="chevron-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#FF6500"/>
+                                            </svg>
+                                        </span>
+                                     </button>
+                                 </h2>
+                                 <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                     <div class="accordion-body">
+                                         Room bookings can be made through our official website, by calling our reservation desk, or by visiting the temple office in person. We recommend booking in advance, especially during festival seasons and peak pilgrimage periods.
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- element08 Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Details -->
+                <div class="col-lg-3 col-md-7">
+                    <div class="contact-details">
+                        <h3>Contact Details</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                Swaminarayan Mandir,<br>
+                                Hanuman Dandi Road, Near<br>
+                                Beyt Dwarka Main Mandir, Beyt<br>
+                                Dwarka, Dist. Dwarka, Gujarat -<br>
+                                361345
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-7 d-flex align-items-center">
+                    <div class="contact-details">
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                info@yatradham.org
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-7 d-flex align-items-center">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                +00 21334 34344
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Connect with us -->
+                <div class="col-lg-3 col-md-5">
+                    <div class="connect-section">
+                        <h3>Connect with us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.098.119.112.222.083.343-.09.377-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378 0 0-.599 2.282-.744 2.84-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24.001 12.017 24.001c6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001 12.017.001z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.098.119.112.222.083.343-.09.377-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378 0 0-.599 2.282-.744 2.84-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24.001 12.017 24.001c6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001 12.017.001z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">2025 Swaminarayan Mandir BeytDwarka. All right reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Term of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
