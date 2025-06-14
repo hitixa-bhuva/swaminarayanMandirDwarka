@@ -4,7 +4,6 @@ class AttractionsSlider {
         this.prevBtn = document.getElementById('prevBtn');
         this.nextBtn = document.getElementById('nextBtn');
         this.cards = document.querySelectorAll('.attraction-card');
-        // this.dotsContainer = document.getElementById('sliderDots'); // Removed this line
         this.currentIndex = 0;
         this.cardsPerView = this.getCardsPerView();
         this.maxIndex = Math.max(0, this.cards.length - this.cardsPerView);
@@ -17,29 +16,15 @@ class AttractionsSlider {
     init() {
         this.updateSlider();
         this.updateControls();
-        // this.createDots(); // Removed this line
     }
 
     getCardsPerView() {
         const width = window.innerWidth;
         if (width >= 1200) return 4;
         if (width >= 992) return 3;
-        if (width >= 768) return 2;
+        if (width >= 768) return 1;
         return 1;
     }
-
-    // createDots() { // Removed this entire method
-    //     this.dotsContainer.innerHTML = '';
-    //     const totalDots = this.maxIndex + 1;
-
-    //     for (let i = 0; i < totalDots; i++) {
-    //         const dot = document.createElement('div');
-    //         dot.className = 'dot';
-    //         if (i === 0) dot.classList.add('active');
-    //         dot.addEventListener('click', () => this.goToSlide(i));
-    //         this.dotsContainer.appendChild(dot);
-    //     }
-    // }
 
     updateSlider() {
         const cardWidth = this.cards[0].offsetWidth;
@@ -47,12 +32,6 @@ class AttractionsSlider {
         const offset = this.currentIndex * (cardWidth + gap);
 
         this.slider.style.transform = `translateX(-${offset}px)`;
-
-        // Update dots (this part is now commented out or removed)
-        // const dots = this.dotsContainer.querySelectorAll('.dot');
-        // dots.forEach((dot, index) => {
-        //     dot.classList.toggle('active', index === this.currentIndex);
-        // });
     }
 
     updateControls() {

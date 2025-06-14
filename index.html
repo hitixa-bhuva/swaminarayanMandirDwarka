@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caramel&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <!-- custome style -->
      <link rel="stylesheet" href="./assets/css/dev-style.css">
+     <link rel="stylesheet" href="./assets/css/dev-responsive.css">
 
 </head>
 <body>
@@ -50,9 +51,8 @@
     </div>
 
     <!-- Main Navigation -->
-    <nav class="navbar navbar-expand-lg main-nav">
+    <!-- <nav class="navbar navbar-expand-lg main-nav">
         <div class="container">
-            <!-- Left Navigation -->
             <div class="d-none d-lg-flex left-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -64,15 +64,12 @@
                 </ul>
             </div>
             
-            <!-- Centered Logo -->
             <a class="navbar-brand" href="#">Swaminarayan Mandir Dwarka</a>
             
-            <!-- Mobile Toggle Button -->
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!-- Right Navigation -->
             <div class="d-none d-lg-flex right-nav">
                 <div class="d-flex gap-2">
                     <a href="#" class="nav-contect-btn">Contact Us</a>
@@ -80,8 +77,8 @@
                 </div>
             </div>
             
-            <!-- Mobile Menu -->
-            <!-- <div class="collapse navbar-collapse d-lg-none" id="navbarNav">
+            
+            <div class="collapse navbar-collapse d-lg-none" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2">
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -95,9 +92,75 @@
                     <a href="#" class="btn btn-outline-primary">Contact Us</a>
                     <a href="#" class="btn btn-primary">View Availability</a>
                 </div>
-            </div> -->
+            </div> 
+        </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg main-nav">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left Navigation (Desktop) -->
+            <div class="d-none d-lg-flex left-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">How to Reach</a></li>
+                </ul>
+            </div>
+    
+            <!-- Logo -->
+            <a class="navbar-brand mx-lg-auto" href="#">Swaminarayan Mandir Dwarka</a>
+    
+            <!-- Toggle Button (Mobile) -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+    
+            <!-- Right Navigation (Desktop) -->
+            <div class="d-none d-lg-flex right-nav">
+                <div class="d-flex gap-2">
+                    <a href="#" class="nav-contect-btn">Contact Us</a>
+                    <a href="#" class="btn btn-primary">View Availability</a>
+                </div>
+            </div>
         </div>
     </nav>
+
+     <!-- Offcanvas Sidebar for Mobile -->
+     <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileNav">
+       <div class="offcanvas-header">
+         <h5 class="offcanvas-title">Swaminarayan Mandir Dwarka</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+       </div>     
+
+       <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
+         
+         <!-- Navigation Links -->
+         <div class="menu-links">
+           <a class="nav-link mb-2" href="#">About</a>
+           <a class="nav-link mb-2" href="#">How to Reach</a>
+         </div>     
+
+         <!-- Bottom Section with Buttons and Social Icons -->
+         <div class="sidebar-bottom mt-auto">
+           <!-- Action Buttons -->
+           <div class="mb-3">
+             <a href="#" class="btn btn-outline-primary w-100 mb-2">Contact Us</a>
+             <a href="#" class="btn btn-primary w-100">View Availability</a>
+           </div>     
+
+           <!-- Social Media Section -->
+           <div class="text-center">
+             <p class="mb-2 fw-semibold">Follow Us</p>
+             <div class="d-flex justify-content-center gap-3">
+               <a href="#" class="social-icon-sidebar" target="_blank"><img src="./assets/images/home/element01/topnav/mail.svg" alt="mail"></a>
+               <a href="#" class="social-icon-sidebar" target="_blank"><img src="./assets/images/home/element01/topnav/facebook.svg" alt="facebook"></a>
+               <a href="#" class="social-icon-sidebar" target="_blank"><img src="./assets/images/home/element01/topnav/instagram.svg" alt="instagram"></a>
+               <a href="#" class="social-icon-sidebar" target="_blank"><img src="./assets/images/home/element01/topnav/link.svg" alt="link"></a>
+             </div>
+           </div>
+         </div>     
+
+       </div>
+     </div>
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -119,11 +182,6 @@
                         </a>
                     </div>
                 </div>
-                <!-- <div class="col-lg-6">
-                    <div class="hero-image">
-                        <img src="./assets/images/home/element01/Image.jpg" alt="Swaminarayan Mandir Building" class="building-image">
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -159,14 +217,14 @@
             <div class="room-gallery">
                 <div class="row g-4">
                     <!-- Room 1 -->
-                    <div class="col-lg-6 col-md-6 roommt-0">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 roommt-0">
                         <div class="gallery-item">
                             <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=400&fit=crop" alt="Dormitory Room">
                         </div>
                     </div>
 
                     <!-- Room 2 -->
-                    <div class="col-lg-6 col-md-6 roommt-0">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 roommt-0">
                         <div class="gallery-item">
                             <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop" alt="Private Room">
                         </div>
@@ -374,12 +432,8 @@
                                 </h2>
                                 <div id="collapseRoad" class="accordion-collapse collapse" aria-labelledby="headingRoad" data-bs-parent="#transportAccordion">
                                     <div class="accordion-body">
-                                        <p class="mb-2"><strong>From Dwarka:</strong> 30 km via Okha Road</p>
-                                        <p class="mb-2"><strong>From Jamnagar:</strong> 137 km via NH947A</p>
-                                        <p class="mb-2"><strong>From Rajkot:</strong> 217 km via NH27 and NH947A</p>
-                                        <p class="mb-0 text-muted small">
-                                            <i class="fas fa-info-circle me-1"></i>
-                                            Take a ferry from Okha to reach Bet Dwarka island
+                                        <p class="location-info">
+                                            Bet Dwarka is about 30 km from Dwarka. You can take regular buses or taxis for a short drive.
                                         </p>
                                     </div>
                                 </div>
@@ -403,12 +457,8 @@
                                 </h2>
                                 <div id="collapseTrain" class="accordion-collapse collapse" aria-labelledby="headingTrain" data-bs-parent="#transportAccordion">
                                     <div class="accordion-body">
-                                        <p class="mb-2"><strong>Nearest Station:</strong> Okha Railway Station (5 km)</p>
-                                        <p class="mb-2"><strong>Major Connection:</strong> Dwarka Railway Station (35 km)</p>
-                                        <p class="mb-2"><strong>Express Trains:</strong> Okha Express, Saurashtra Express</p>
-                                        <p class="mb-0 text-muted small">
-                                            <i class="fas fa-info-circle me-1"></i>
-                                            Take local transport from station to Okha port, then ferry to island
+                                        <p class="location-info">
+                                            The nearest railway station is Dwarka Railway Station, around 30 km away. From there, you can take a taxi or bus to the island. By Sea The most scenic way is by boat from Okha Port. Regular boats take you across the sea to the island.
                                         </p>
                                     </div>
                                 </div>
@@ -432,12 +482,8 @@
                                 </h2>
                                 <div id="collapseAir" class="accordion-collapse collapse" aria-labelledby="headingAir" data-bs-parent="#transportAccordion">
                                     <div class="accordion-body">
-                                        <p class="mb-2"><strong>Nearest Airport:</strong> Jamnagar Airport (137 km)</p>
-                                        <p class="mb-2"><strong>Major Airport:</strong> Rajkot Airport (217 km)</p>
-                                        <p class="mb-2"><strong>International:</strong> Ahmedabad Airport (450 km)</p>
-                                        <p class="mb-0 text-muted small">
-                                            <i class="fas fa-info-circle me-1"></i>
-                                            Hire taxi or take bus from airport to Okha, then ferry to island
+                                        <p class="location-info">
+                                            The nearest airport is in Jamnagar, about 137 km away. You can hire a taxi or take a bus to Bet Dwarka.
                                         </p>
                                     </div>
                                 </div>
@@ -506,14 +552,6 @@
                             <h3 class="card-title">Nageshwar Temple</h3>
                         </div>
                     </div>
-                    
-                    <!-- Gopi Talav -->
-                    <div class="attraction-card" data-attraction="gopi-talav">
-                        <img src="https://images.unsplash.com/photo-1580158392353-7c7c5b1d8d3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gopi Talav" class="card-image">
-                        <div class="card-overlay">
-                            <h3 class="card-title">Gopi Talav</h3>
-                        </div>
-                    </div>
                     <!-- Rukmani Devi Temple -->
                     <div class="attraction-card" data-attraction="rukmani-temple">
                         <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Rukmani Devi Temple" class="card-image">
@@ -527,14 +565,6 @@
                         <img src="https://images.unsplash.com/photo-1609920658906-8223bd289001?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Nageshwar Temple" class="card-image">
                         <div class="card-overlay">
                             <h3 class="card-title">Nageshwar Temple</h3>
-                        </div>
-                    </div>
-                    
-                    <!-- Gopi Talav -->
-                    <div class="attraction-card" data-attraction="gopi-talav">
-                        <img src="https://images.unsplash.com/photo-1580158392353-7c7c5b1d8d3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gopi Talav" class="card-image">
-                        <div class="card-overlay">
-                            <h3 class="card-title">Gopi Talav</h3>
                         </div>
                     </div>
                 </div>
@@ -690,7 +720,8 @@
     </section>
 
     <!-- element08 Footer -->
-    <footer class="footer-section">
+    <section id="element08">
+        <footer class="footer-section">
         <div class="container">
             <div class="row">
                 <!-- Contact Details -->
@@ -744,7 +775,7 @@
                     </div>
                 </div>
                 <!-- Connect with us -->
-                <div class="col-lg-3 col-md-5 d-flex justify-content-end">
+                <div class="col-lg-3 col-md-5 d-flex justify-content-end justify-content-sm-start">
                     <div class="connect-section">
                         <h3>Connect with us</h3>
                         <div class="social-icons">
@@ -779,8 +810,13 @@
             </div>
         </div>
     </footer>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP & ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/gsap.js"></script>
 </body>
 </html>
