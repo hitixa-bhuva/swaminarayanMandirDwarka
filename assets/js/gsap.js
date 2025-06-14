@@ -183,13 +183,3 @@ gsap.from("#element08 .footer-section", {
   duration: 1.2,
   ease: "power3.out"
 });
-gsap.from("#element08 .footer-bottom", {
-  scrollTrigger: {
-    trigger: "#element08 .footer-bottom",
-    start: "top 90%",
-  },
-  y: 30,
-  opacity: 0,
-  duration: 1,
-  ease: "power2.out"
-});
