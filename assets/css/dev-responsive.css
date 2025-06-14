@@ -93,7 +93,7 @@
 
 @media (max-width: 576px) {
   .hero-section {
-  background-image   : url(/assets/images/home/element01/phone.png);
+  background-image   : url(https://hitixa-bhuva.github.io/swaminarayanMandirDwarka/assets/images/home/element01/phone.png);
   background-size    : contain;
   background-repeat  : no-repeat;
   background-position: right center;
