@@ -96,14 +96,17 @@
   background-image   : url(https://hitixa-bhuva.github.io/swaminarayanMandirDwarka/assets/images/home/element01/phone.png);
   background-size    : contain;
   background-repeat  : no-repeat;
-  background-position: right center;
+  background-position: right bottom;
   display    : flex;
   align-items: start;
   position   : relative;
   overflow   : hidden;
-  min-height : 100vh;
+  min-height : 80vh;
   padding: 20px !important;
   padding-bottom: 0 !important;
+}
+.hero-content{
+    margin-bottom: 0;
 }
 #element05 .locationsection{
     padding: 20px !important;
@@ -115,9 +118,7 @@
 .hero-title .highlight{
   font-size: 50px;
 }
-#element02 {
-  margin-top: 0 !important;
-}
+
 }
 @media (max-width: 768px) {
   .section-title {
