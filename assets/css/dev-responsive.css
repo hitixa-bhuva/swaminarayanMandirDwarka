@@ -105,6 +105,9 @@
   padding: 20px !important;
   padding-bottom: 0 !important;
 }
+#element05 .locationsection{
+    padding: 20px !important;
+}
   .hero-title {
     font-size: 25px;
     margin-top: 10px !important;
@@ -323,7 +326,7 @@
 
   #element05 .locationsection {
     padding: 10px;
-  }
+  } 
 
   #element05 .accordion-body {
     padding: 10px !important;
