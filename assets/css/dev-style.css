@@ -439,7 +439,7 @@ body {
 
 /* <!-- element03 Check-in and Check-out Details --> */
 #element03 .booking-section {
-  background-image: url(/assets/images/home/element03/background.jpg);
+  background-image: url(https://hitixa-bhuva.github.io/swaminarayanMandirDwarka/assets/images/home/element03/background.jpg);
   padding         : 100px;
   min-height      : 400px;
 }
@@ -842,7 +842,7 @@ body {
 }
 
 #element05 .locationsectionimg {
-  background-image   : url(https://hitixa-bhuva.github.io/swaminarayanMandirDwarka/assets/images/home/element03/background.jpg);
+  background-image   : url(/assets/images/home/element05/bg.png);
   background-position: bottom;
 }
 
